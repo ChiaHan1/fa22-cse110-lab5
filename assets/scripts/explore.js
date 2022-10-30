@@ -13,7 +13,7 @@ function text2speech(event) {
 
     document.querySelector("img").src = "assets/images/smiling-open.png";
 
-    utter.addEventListener("end", (event) => {
+    textEntered.addEventListener("end", (event) => {
       document.querySelector("img").src = "assets/images/smiling.png";
     });
   });
