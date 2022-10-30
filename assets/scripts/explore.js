@@ -5,7 +5,8 @@ const soundPlay = document.querySelector("button");
 const voiceSelect = document.getElementById("voice-select");
 const synthesis = window.speechSynthesis;
 
-function text2speech(event) {
+// function text2speech(event) {
+function text2speech() {
   soundPlay.addEventListener('click', async function() {
     const textEntered = new SpeechSynthesisUtterance(texts.value);
     textEntered.lang = document.getElementById("voice-select").value;
