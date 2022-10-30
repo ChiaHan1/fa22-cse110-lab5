@@ -4,18 +4,18 @@ const texts = document.getElementById("text-to-speak");
 const soundPlay = document.querySelector("button");
 const voiceSelect = document.getElementById("voice-select");
 const synthesis = window.speechSynthesis;
+const img1 = document.querySelector("img");
 
-// function text2speech(event) {
-function text2speech() {
+function text2speech(event) {
   soundPlay.addEventListener('click', async function() {
     const textEntered = new SpeechSynthesisUtterance(texts.value);
     textEntered.lang = document.getElementById("voice-select").value;
     speechSynthesis.speak(textEntered);
 
-    document.querySelector("img").src = "assets/images/smiling-open.png";
+    img1.src = "assets/images/smiling-open.png";
 
     textEntered.addEventListener("end", (event) => {
-      document.querySelector("img").src = "assets/images/smiling.png";
+      img1.src = "assets/images/smiling.png";
     });
   });
 }
