@@ -7,7 +7,7 @@ const synthesis = window.speechSynthesis;
 
 function text2speech(event) {
   soundPlay.addEventListener('click', function() {
-    let textEntered = new SpeechSynthesisUtterance(texts.value);
+    const textEntered = new SpeechSynthesisUtterance(texts.value);
     textEntered.lang = document.getElementById("voice-select").value;
     speechSynthesis.speak(textEntered);
 
