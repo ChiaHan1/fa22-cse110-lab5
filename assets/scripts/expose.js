@@ -23,6 +23,7 @@ function changeHorn(event) {
     alt1 = "image is selected.";
     snd1.src = "assets/audio/air-horn.mp3";
     soundPlay.addEventListener('click', function() {
+      snd1.src = "assets/audio/air-horn.mp3";
       snd1.play();
     });
 
@@ -33,6 +34,7 @@ function changeHorn(event) {
     alt1 = "image is selected.";
     snd1.src = "assets/audio/car-horn.mp3";
     soundPlay.addEventListener('click', function() {
+      snd1.src = "assets/audio/car-horn.mp3";
       snd1.play();
     });
   }
@@ -42,6 +44,7 @@ function changeHorn(event) {
     alt1 = "image is selected.";
     snd1.src = "assets/audio/party-horn.mp3";
     soundPlay.addEventListener('click', function() {
+      snd1.src = "assets/audio/party-horn.mp3";
       snd1.play();
       jsConfetti.addConfetti()
     });
