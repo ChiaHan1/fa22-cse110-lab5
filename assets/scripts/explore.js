@@ -52,8 +52,9 @@ function populateVoiceList() {
 }
 
 function init() {
-  texts.addEventListener('change', text2speech());
   populateVoiceList();
+  texts.addEventListener('change', text2speech());
+  // populateVoiceList();
 
   /*
   if (typeof speechSynthesis !== 'undefined' && speechSynthesis.onvoiceschanged !== undefined) {
