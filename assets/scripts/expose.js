@@ -21,7 +21,7 @@ function changeHorn(event) {
     img1.src = "assets/images/air-horn.svg";
     let alt1 = document.querySelector("input[name='alt']");
     alt1 = "image is selected.";
-    snd1.src = "assets/audio/air-horn.mp3";
+    // snd1.src = "assets/audio/air-horn.mp3";
     soundPlay.addEventListener('click', function() {
       snd1.src = "assets/audio/air-horn.mp3";
       snd1.play();
@@ -32,7 +32,7 @@ function changeHorn(event) {
     img1.src = "assets/images/car-horn.svg";
     let alt1 = document.querySelector("input[name='alt']");
     alt1 = "image is selected.";
-    snd1.src = "assets/audio/car-horn.mp3";
+    // snd1.src = "assets/audio/car-horn.mp3";
     soundPlay.addEventListener('click', function() {
       snd1.src = "assets/audio/car-horn.mp3";
       snd1.play();
@@ -42,7 +42,7 @@ function changeHorn(event) {
     img1.src = "assets/images/party-horn.svg";
     let alt1 = document.querySelector("input[name='alt']");
     alt1 = "image is selected.";
-    snd1.src = "assets/audio/party-horn.mp3";
+    // snd1.src = "assets/audio/party-horn.mp3";
     soundPlay.addEventListener('click', function() {
       snd1.src = "assets/audio/party-horn.mp3";
       snd1.play();
@@ -62,7 +62,7 @@ function volChange(event) {
   if(event.target.value >= "33" && event.target.value < "67"){
     imgVol.src = "assets/icons/volume-level-2.svg";
   }
-  if(event.target.value > "67"){
+  else{
     imgVol.src = "assets/icons/volume-level-3.svg";
   }
 }
